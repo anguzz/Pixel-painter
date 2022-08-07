@@ -25,3 +25,7 @@ import Footer from "$lib/pages/Footer.svelte";
 
 <Footer backgroundClass={neutralBackground} />
 
+<style>
+	
+
+</style>

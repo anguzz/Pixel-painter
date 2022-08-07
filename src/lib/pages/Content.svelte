@@ -12,7 +12,6 @@
    import pixelsToSVG from '$lib/draw/pixelsToSVG';
 
 
-	let mirror = 0;
 	let gridEnabled = true;
 	let colors = ['#000000', '#ff0000'];
 	let selectedColor = colors[0];
@@ -50,26 +49,20 @@
 
 </script>
 
-<svelte:head>
-
-</svelte:head>
 
 <svelte:window bind:innerWidth bind:innerHeight/>
 
 <title>Content</title>
 <Page id="Content" title=" " {backgroundClass}>
 
-  <div id="board">
+ 
   <Controls bind:gridEnabled {saveImage}>
     <Palette {colors} bind:selectedColor on:addcolor={addColor} on:remcolor={removeColor} />
-    <DrawingBoard bind:color={selectedColor} {mirror} {gridEnabled} bind:getImageData />
+    <DrawingBoard bind:color={selectedColor} {gridEnabled} bind:getImageData />
   </Controls>
-</div>
-
 </Page>
 
 
 <style>
-
 
 </style>

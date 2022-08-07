@@ -248,8 +248,10 @@
 
 <style>
 	canvas {
-		margin-left:40rem ;
-		margin-bottom: 4rem ;
+		margin-bottom:4rem;
+		
 		background-color:#1f2937;
+		
 	}
+	
 </style>

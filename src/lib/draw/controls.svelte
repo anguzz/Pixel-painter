@@ -33,7 +33,7 @@
 		grid-gap: 1rem;
 		align-items: center;
 		margin: 0 auto;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 		
 	}
 	nav.toggles {
@@ -42,7 +42,7 @@
 	button {
 		background-color: #3a8ccf;
 		border: none;
-		
+		border-radius: 10px;
 	}
 	.active {
 		background-color: #606c76;
