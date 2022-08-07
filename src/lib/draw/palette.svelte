@@ -80,7 +80,7 @@
 		border-color: rgba(255, 255, 255, 0.75);
 		transition: border-color ease 100ms;
 		cursor: pointer;
-
+		padding:1.55rem;
 	}
 	button .close {
 		opacity: 0;

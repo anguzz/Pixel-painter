@@ -16,7 +16,7 @@
 
 	let isReady: boolean = false;
 
-	const ERASER_COLOR = '#cacaca';
+	const ERASER_COLOR = '#111827';
 
 	let selected: [number, number] = null;
 
@@ -232,6 +232,7 @@
 
 <svelte:window bind:innerWidth bind:innerHeight/>
 
+<div class="grid-pos"> 
 <canvas
 	bind:this={canvas}
 	width={size * blockSize}
@@ -246,12 +247,18 @@
 	data-testid="drawing-board"
 />
 
+</div>
+
 <style>
+	
+	.grid-pos{
+	position: relative;
+	width: 700px;
+    height: auto;
+    margin: 5% auto;
+	}
 	canvas {
-		margin-bottom:4rem;
-		
 		background-color:#1f2937;
-		
 	}
 	
 </style>

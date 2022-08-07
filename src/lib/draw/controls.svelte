@@ -13,7 +13,7 @@
 <nav class="toggles">
 	
 	<button
-		title={`Toggle Grid`}
+		title={`Toggle Grid`}*-
 		on:click={toggleGrid}
 		class={gridEnabled ? 'toggle active' : 'toggle'}
 	>
@@ -43,6 +43,7 @@
 		background-color: #3a8ccf;
 		border: none;
 		border-radius: 10px;
+
 	}
 	.active {
 		background-color: #606c76;
@@ -56,7 +57,7 @@
 		height: 4rem;
 		display: inline-flex;
 		transition: padding ease 300ms;
-		margin-left:40rem;
+		margin-bottom:.6rem;
 	}
 	.toggle > span {
 		display: flex;
