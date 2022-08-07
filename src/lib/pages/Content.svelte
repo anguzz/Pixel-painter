@@ -2,13 +2,13 @@
   import Page from "$lib/components/Page.svelte";
   import { primaryBackground } from "$lib/utils/constants";
 
-  export let backgroundClass = primaryBackground;
-  import Controls from "$lib/draw/controls.svelte";
-  import DrawingBoard from "$lib/draw/drawing-board.svelte";
-  import { downloadURI } from "$lib/draw/files";
+ 	 export let backgroundClass = primaryBackground;
+  	import Controls from "$lib/draw/controls.svelte";
+ 	 import DrawingBoard from "$lib/draw/drawing-board.svelte";
+ 	 import { downloadURI } from "$lib/draw/files";
 	import Palette from "$lib/draw/palette.svelte";
 	import {  ColoredPixels,ImageDataType, ImageType } from "$lib/draw/types";
-  import type { ImageDataFn } from "$lib/draw/types";
+  	import type { ImageDataFn } from "$lib/draw/types";
    import pixelsToSVG from '$lib/draw/pixelsToSVG';
 
 
