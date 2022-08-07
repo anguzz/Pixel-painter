@@ -1,18 +1,13 @@
 <script lang="ts">
-	import { ImageType, MirrorMode } from './types';
-	export let mirror: MirrorMode = MirrorMode.None;
+	import { ImageType } from './types';
 	export let saveImage = (_type: ImageType) => {};
 	export let gridEnabled = true;
 
-	const toggleMirror = (mode: MirrorMode) => () => {
-		if (mirror & mode) {
-			mirror ^= mode;
-		} else {
-			mirror |= mode;
-		}
-	};
 
 	const toggleGrid = () => (gridEnabled = !gridEnabled);
+
+	
+ 
 </script>
 
 <nav class="toggles">
@@ -39,26 +34,29 @@
 		align-items: center;
 		margin: 0 auto;
 		grid-template-columns: repeat(2, 1fr);
+		
 	}
 	nav.toggles {
 		grid-template-columns: repeat(3, 1fr);
 	}
 	button {
-		background-color: #cf3a69;
+		background-color: #3a8ccf;
 		border: none;
+		
 	}
 	.active {
 		background-color: #606c76;
 	}
 	button.toggle {
 		border: 1px solid rgba(0, 0, 0, 0.08);
-		background: #ffffff;
+		background: #1f2937;
 		border-radius: 2rem;
 		width: 8rem;
 		padding: 0 4rem 0 0;
 		height: 4rem;
 		display: inline-flex;
 		transition: padding ease 300ms;
+		margin-left:40rem;
 	}
 	.toggle > span {
 		display: flex;

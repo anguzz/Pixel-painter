@@ -35,7 +35,7 @@
 		class={selectedColor === null ? 'selected button-icons' : 'button-icons'}
 		on:click={selectColor(null)}
 		title={'Eraser'}
-		>X
+		>ERASE
 	</button>
 	{#each colors as hex}
 		<button

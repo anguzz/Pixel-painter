@@ -19,7 +19,7 @@
 	let getImageData: ImageDataFn = () => '';
 
 	const saveImage = (type: ImageType) => {
-		let filename = prompt('How should we call the file?', 'image');
+		let filename = prompt('Name your drawing!', 'image');
 		if (!filename.endsWith('.' + type)) filename += '.' + type;
 		switch (type) {
 			case ImageType.png:
@@ -43,8 +43,20 @@
 		set.delete(e.detail.color);
 		colors = [...set];
 	};
+
+  let innerWidth = 0
+	let innerHeight = 0
+	$: mobile = innerWidth < 1080;
+
 </script>
 
+<svelte:head>
+
+</svelte:head>
+
+<svelte:window bind:innerWidth bind:innerHeight/>
+
+<title>Content</title>
 <Page id="Content" title=" " {backgroundClass}>
 
   <div id="board">
@@ -58,8 +70,6 @@
 
 
 <style>
-.board{
-  display: flex;
-}
+
 
 </style>

@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { ColoredPixels, ImageDataFn, ImageDataType, MirrorMode } from './types';
+	import { ColoredPixels, ImageDataFn, ImageDataType } from './types';
 	import { compileProgram } from './webgl';
 
 	const PIXEL_RATIO = 1;
 	let canvas: HTMLCanvasElement;
 	let gl: WebGLRenderingContext;
-	export let blockSize = 32;
+	export let blockSize = 40;
 	export let size: number = 16;
 	// [x,y,color]
 	export let pixels: ColoredPixels = [];
@@ -89,7 +89,6 @@
 			gl.enableVertexAttribArray(color);
 			const size = gl.getUniformLocation(drawingShaders, 'size');
 			gl.uniform1f(size, blockSize);
-
 			gl.drawArrays(gl.POINTS, 0, points);
 		}
 
@@ -224,7 +223,14 @@
 			prevGrid = gridEnabled;
 		}
 	}
+
+	let innerWidth = 0
+	let innerHeight = 0
+	$: mobile = innerWidth < 1080;
 </script>
+
+
+<svelte:window bind:innerWidth bind:innerHeight/>
 
 <canvas
 	bind:this={canvas}
@@ -242,7 +248,8 @@
 
 <style>
 	canvas {
-		margin: 4rem 0;
+		margin-left:40rem ;
+		margin-bottom: 4rem ;
 		background-color:#1f2937;
 	}
 </style>
