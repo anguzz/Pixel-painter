@@ -15,7 +15,7 @@
   id="bg"
 >
   <div class="text-center">
-    <h1 class="text-5xl m-6 {color} font-light"> Welcome! </h1>
+    <h1 class="text-5xl m-6 {color} font-light"> 👾 Let's make some pixel art! 🔹 </h1>
   </div>
 
 </div>
@@ -23,8 +23,8 @@
 <style>
   #bg {
     /* The image used background-image: url("/assets/images/background1.jpg"); */
-    background-image: linear-gradient(217deg, rgba(0, 248, 165, 0.8), rgba(255,0,0,0) 70.71%),
-      linear-gradient(127deg, rgba(0, 4, 255, 0.8), rgba(0,255,0,0) 70.71%),
+    background-image: linear-gradient(217deg, rgba(0, 178, 248, 0.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(212, 0, 255, 0.8), rgba(0,255,0,0) 70.71%),
       linear-gradient(336deg, rgba(248, 248, 248, 0.8), rgba(0,0,255,0) 70.71%);
     
   }
