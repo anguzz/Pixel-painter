@@ -14,8 +14,8 @@ import Footer from "$lib/pages/Footer.svelte";
 </script>
 
 <SEO
-  title="site title"
-  description="site description"
+  title="Pixel-painter"
+  description="Draw some pixel art and save it!"
   canonical="site link"
 />
 
