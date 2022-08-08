@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-
+	import ColorPicker from './ColorPicker.svelte';
 	export let selectedColor: string = null;
 	export let colors: string[];
 
@@ -9,7 +9,7 @@
 	};
 
 	const dispatch = createEventDispatcher();
-
+	
 	const onAddColor = () => {
 		let randomColor = '#';
 		for (let i = 0; i < 3; i++) {
@@ -31,6 +31,9 @@
 </script>
 
 <nav>
+	
+	More color codes here   <ColorPicker value="#5E7CBC" />
+
 	<button
 		class={selectedColor === null ? 'selected button-icons' : 'button-icons'}
 		on:click={selectColor(null)}

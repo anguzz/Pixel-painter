@@ -13,7 +13,13 @@
 
 
 	let gridEnabled = true;
-	let colors = ['#000000', '#ff0000'];
+	let colors = [
+'#000000', '#FFFFFF', '#C0C0C0', 
+'#FF0000','#800000','#008080','#FF00FF',
+'#0000FF','#000080','#00FFFF','#73DE8C',
+'#808000','#00FF00','#008000','#FFFF00'
+
+];
 	let selectedColor = colors[0];
 	let getImageData: ImageDataFn = () => '';
 
