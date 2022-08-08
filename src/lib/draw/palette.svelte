@@ -3,6 +3,8 @@
 
 	export let selectedColor: string = null;
 	export let colors: string[];
+	import { setContext } from 'svelte'
+
 
 	const selectColor = (hex: string) => () => {
 		selectedColor = hex;
@@ -28,13 +30,20 @@
 				color
 			});
 	};
+
+	
+	import ColorPicker, { Rgb } from 'svelte-awesome-color-picker';
+
+	let rgb: Rgb; // or hsv or hex
+	
 </script>
 
 <nav>
 	
-
+	<ColorPicker bind:rgb />
 
 	<button
+
 		class={selectedColor === null ? 'selected button-icons' : 'button-icons'}
 		on:click={selectColor(null)}
 		title={'Eraser'}
@@ -50,7 +59,7 @@
 			<span title="Delete" class="close" on:click={removeColor(hex)}>&times;</span>
 		</button>
 	{/each}
-	<button on:click={onAddColor} title={'Add color'} class="button-icons">+</button>
+	<button on:click={onAddColor} title={'Add color'} class="button-icons">➕</button>
 </nav>
 
 <style>
@@ -58,6 +67,7 @@
 		display: flex;
 		max-width: 256px;
 		flex-wrap: wrap;
+		color:#000
 	}
 	button {
 		display: flex;
