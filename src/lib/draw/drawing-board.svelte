@@ -224,13 +224,10 @@
 		}
 	}
 
-	let innerWidth = 0
-	let innerHeight = 0
-	$: mobile = innerWidth < 1080;
 </script>
 
 
-<svelte:window bind:innerWidth bind:innerHeight/>
+
 
 <div class="grid-pos"> 
 <canvas

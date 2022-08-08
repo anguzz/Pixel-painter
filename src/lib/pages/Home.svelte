@@ -7,6 +7,8 @@
   let colorClass = `${color} ${hover}`;
   let spacingClass = "mx-5";
   let sizeClass = "h-8 w-8";
+
+
 </script>
 
 <Anchor id="home" />
