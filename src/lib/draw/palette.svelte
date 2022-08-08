@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-	import ColorPicker from './ColorPicker.svelte';
+
 	export let selectedColor: string = null;
 	export let colors: string[];
 
@@ -32,7 +32,7 @@
 
 <nav>
 	
-	More color codes here   <ColorPicker value="#5E7CBC" />
+
 
 	<button
 		class={selectedColor === null ? 'selected button-icons' : 'button-icons'}
@@ -63,12 +63,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 3em;
-		height: 3em;
+		width: 2.7em;
+		height: 2.7em;
 		border: 2px solid rgba(255, 255, 255, 1);
 		transition: border-color ease 100ms;
 		padding: 0.5rem;
-		margin: 2px;
+		margin: .7px;
 		position: relative;
 		border-radius: 10px;
 	}
