@@ -93,8 +93,9 @@
 		opacity: 1;
 	}
 	button.selected {
-		border-color: rgba(255, 255, 255, 0);
+		border-color: rgb(12, 182, 212);
 		transition: border-color ease 100ms;
+		border-width: .3rem;
 	}
 	button > span.close {
 		position: absolute;
