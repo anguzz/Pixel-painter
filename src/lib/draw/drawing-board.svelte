@@ -251,9 +251,10 @@
 	.grid-pos{
 	position: relative;
 	width: 700px;
-    height: auto;
-    margin: 5% auto;
-	
+	height: 100%;
+    margin: 2% auto;
+	overflow-x: hidden;
+    width: 100%;
 	}
 	canvas {
 		background-color:#1f2937;
