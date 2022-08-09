@@ -31,17 +31,17 @@
 			});
 	};
 
-	
-	import ColorPicker, { Rgb } from 'svelte-awesome-color-picker';
 
+	import ColorPicker, { Rgb } from 'svelte-awesome-color-picker';
 	let rgb: Rgb; // or hsv or hex
 	
 </script>
+<ColorPicker bind:rgb />
+<br>
+
+
 
 <nav>
-	
-	<ColorPicker bind:rgb />
-
 	<button
 
 		class={selectedColor === null ? 'selected button-icons' : 'button-icons'}

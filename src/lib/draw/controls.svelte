@@ -3,15 +3,13 @@
 	export let saveImage = (_type: ImageType) => {};
 	export let gridEnabled = true;
 
-
 	const toggleGrid = () => (gridEnabled = !gridEnabled);
-
-	
- 
 </script>
 
+
+
+
 <nav class="toggles">
-	
 	<button
 		title={`Toggle Grid`}*-
 		on:click={toggleGrid}
@@ -26,6 +24,9 @@
 		<button on:click={() => saveImage(ImageType[ext])}>Save as {ext.toUpperCase()}</button>
 	{/each}
 </nav>
+
+
+
 
 <style>
 	nav {
