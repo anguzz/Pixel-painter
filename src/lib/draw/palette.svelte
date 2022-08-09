@@ -36,9 +36,11 @@
 	let rgb: Rgb; // or hsv or hex
 	
 </script>
+<div class='color-picker'>
 <ColorPicker bind:rgb />
-<br>
 
+</div>
+<br>
 
 
 <nav>
@@ -125,5 +127,9 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+	}
+
+	.color-picker{
+		color: #000;
 	}
 </style>
