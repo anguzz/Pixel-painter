@@ -17,7 +17,7 @@
   id="bg"
 >
   <div class="text-center">
-    <h1 class="text-5xl m-6 {color} font-light"> 👾 Pixel-Paint 🔹 </h1>
+    <h1 class="text-5xl m-6 {color} font-light"> 👾 Pixel-Painter 🔹 </h1>
   </div>
 
 </div>
