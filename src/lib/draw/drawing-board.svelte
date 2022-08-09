@@ -250,7 +250,7 @@
 	
 	.grid-pos{
 	position: relative;
-	
+	display:block;
 	height: 100%;
     margin-left: auto;
 	overflow-x: hidden;
