@@ -6,8 +6,8 @@
 	const PIXEL_RATIO = 1;
 	let canvas: HTMLCanvasElement;
 	let gl: WebGLRenderingContext;
-	export let blockSize = 40;
-	export let size: number = 16;
+	export let blockSize = 30;
+	export let size: number = 20;
 	// [x,y,color]
 	export let pixels: ColoredPixels = [];
 	export let color: string = '#00ff00';
