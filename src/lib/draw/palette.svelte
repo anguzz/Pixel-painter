@@ -3,7 +3,7 @@
 
 	export let selectedColor: string = null;
 	export let colors: string[];
-	import { setContext } from 'svelte'
+	
 
 
 	const selectColor = (hex: string) => () => {
@@ -77,7 +77,7 @@
 		height: 2.7em;
 		border: 2px solid rgba(255, 255, 255, 1);
 		transition: border-color ease 100ms;
-		padding: 0.5rem;
+		padding: 1rem;
 		margin: .7px;
 		position: relative;
 		border-radius: 10px;
@@ -93,7 +93,7 @@
 		border-color: rgba(255, 255, 255, 0.75);
 		transition: border-color ease 100ms;
 		cursor: pointer;
-		padding:1.55rem;
+		padding:1.45rem;
 	}
 	button .close {
 		opacity: 0;

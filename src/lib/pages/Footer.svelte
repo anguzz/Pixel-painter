@@ -76,28 +76,6 @@ footer {
 * {
   transition: all 0.3s ease;
 }
-.divider {
-  filter: blur(1px);
-}
-input,
-textarea {
-  background-color: var(--comp-primary);
-  color: var(--black);
-}
-.nav-modal {
-  background-color: var(--primary);
-}
-button {
-  background-color: var(--comp-primary);
-  color: var(--primary);
-}
-.social-wrapper {
-  background-color:#16171E;
-  border: 1px solid var(--comp-primary);
-}
-.copyright{
-   font-weight:bold;
-   font-size: large;
-}
+
 
   </style>
