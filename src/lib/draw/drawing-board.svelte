@@ -252,7 +252,7 @@
 	position: relative;
 	
 	height: 100%;
-    margin: 2%gg auto;
+    margin-left: auto;
 	overflow-x: hidden;
     width: 100%;
 	}
