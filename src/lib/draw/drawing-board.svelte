@@ -6,8 +6,8 @@
 	const PIXEL_RATIO = 1;
 	let canvas: HTMLCanvasElement;
 	let gl: WebGLRenderingContext;
-	export let blockSize = 30;
-	export let size: number = 20;
+	export let blockSize = 32;
+	export let size: number = 16;
 	// [x,y,color]
 	export let pixels: ColoredPixels = [];
 	export let color: string = '#00ff00';
@@ -253,6 +253,7 @@
 	width: 700px;
     height: auto;
     margin: 5% auto;
+	
 	}
 	canvas {
 		background-color:#1f2937;
