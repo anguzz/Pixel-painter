@@ -250,9 +250,9 @@
 	
 	.grid-pos{
 	position: relative;
-	width: 700px;
+	
 	height: 100%;
-    margin: 2% auto;
+    margin: 2%gg auto;
 	overflow-x: hidden;
     width: 100%;
 	}
