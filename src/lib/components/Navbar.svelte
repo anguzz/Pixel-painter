@@ -29,7 +29,7 @@
       id: "#Content",
       route: "/Content",
       name: "Content",
-      title: "Draw",
+      title: "Paint",
     },
   ];
   const menuDuration = 200;
