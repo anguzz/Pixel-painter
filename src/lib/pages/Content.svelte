@@ -10,6 +10,7 @@
 	import {  ColoredPixels,ImageDataType, ImageType } from "$lib/draw/types";
   	import type { ImageDataFn } from "$lib/draw/types";
    import pixelsToSVG from '$lib/draw/pixelsToSVG';
+import Text from "$lib/components/Text.svelte";
 
 
 	let gridEnabled = true;
@@ -55,14 +56,15 @@
 
 <title>Content</title>
 <Page id="Content" title=" " {backgroundClass}>
-
- 
+<Text>
   <Controls bind:gridEnabled {saveImage}>
     <Palette {colors} bind:selectedColor on:addcolor={addColor} on:remcolor={removeColor} />
     <DrawingBoard bind:color={selectedColor} {gridEnabled} bind:getImageData />
   </Controls>
+</Text>
 </Page>
 
+ 
 
 <style>
 
