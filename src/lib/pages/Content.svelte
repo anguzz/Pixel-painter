@@ -1,16 +1,16 @@
 <script lang="ts">
   import Page from "$lib/components/Page.svelte";
   import { primaryBackground } from "$lib/utils/constants";
+  import Controls from "$lib/draw/controls.svelte";
+  import DrawingBoard from "$lib/draw/drawing-board.svelte";
+  import { downloadURI } from "$lib/draw/files";
+  import Palette from "$lib/draw/palette.svelte";
+  import {  ColoredPixels,ImageDataType, ImageType } from "$lib/draw/types";
+  import type { ImageDataFn } from "$lib/draw/types";
+  import pixelsToSVG from '$lib/draw/pixelsToSVG';
+  import Text from "$lib/components/Text.svelte";
+  export let backgroundClass = primaryBackground;
 
- 	 export let backgroundClass = primaryBackground;
-  	import Controls from "$lib/draw/controls.svelte";
- 	 import DrawingBoard from "$lib/draw/drawing-board.svelte";
- 	 import { downloadURI } from "$lib/draw/files";
-	import Palette from "$lib/draw/palette.svelte";
-	import {  ColoredPixels,ImageDataType, ImageType } from "$lib/draw/types";
-  	import type { ImageDataFn } from "$lib/draw/types";
-   import pixelsToSVG from '$lib/draw/pixelsToSVG';
-import Text from "$lib/components/Text.svelte";
 
 
 	let gridEnabled = true;
@@ -56,17 +56,32 @@ import Text from "$lib/components/Text.svelte";
 
 <title>Content</title>
 <Page id="Content" title=" " {backgroundClass}>
+	<div
+  class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-neutral-600 bg-blend-soft-light dark:bg-blend-soft-light dark:bg-neutral-700"
+  id="bg"
+>
 <Text>
+	<h1 class="text-5xl m-6  font-light"> 👾 Pixel-Painter 🔹 </h1>
+
   <Controls bind:gridEnabled {saveImage}>
+	<br>
     <Palette {colors} bind:selectedColor on:addcolor={addColor} on:remcolor={removeColor} />
+	<br>
     <DrawingBoard bind:color={selectedColor} {gridEnabled} bind:getImageData />
   </Controls>
 </Text>
+</div>
 </Page>
 
  
 
 <style>
 
-
+#bg {
+    /* The image used background-image: url("/assets/images/background1.jpg"); */
+    background-image: linear-gradient(217deg, rgba(0, 178, 248, 0.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(212, 0, 255, 0.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(248, 248, 248, 0.8), rgba(0,0,255,0) 70.71%);
+    
+  }
 </style>
